@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:visibility="gone"
+    tools:context=".ui.carddetails.CardDetailsFragment">
+
+    <TextView
+        android:id="@+id/tv_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_card_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_card_number"
+        app:layout_constraintTop_toBottomOf="@id/tv_card_number" />
+
+    <TextView
+        android:id="@+id/tv_expiration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expiration"
+        app:layout_constraintStart_toStartOf="@id/tv_card_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_card_name" />
+
+    <TextView
+        android:id="@+id/tv_expiration_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_expiration_label"
+        app:layout_constraintTop_toTopOf="@id/tv_expiration_label" />
+
+    <TextView
+        android:id="@+id/tv_available_limit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/available_limit"
+        app:layout_constraintStart_toStartOf="@id/tv_expiration_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_expiration_label" />
+
+    <TextView
+        android:id="@+id/tv_available_limit_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_available_limit_label"
+        app:layout_constraintTop_toTopOf="@id/tv_available_limit_label" />
+
+    <TextView
+        android:id="@+id/tv_total_limit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_limit"
+        app:layout_constraintStart_toStartOf="@id/tv_available_limit_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_available_limit_label" />
+
+    <TextView
+        android:id="@+id/tv_total_limit_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_total_limit_label"
+        app:layout_constraintTop_toTopOf="@id/tv_total_limit_label" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

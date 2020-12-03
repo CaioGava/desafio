@@ -1,0 +1,9 @@
+<resources>
+    <string name="my_card">Meu cartão</string>
+    <string name="see_details">Ver Detalhes</string>
+    <string name="my_balance">Meu Saldo</string>
+    <string name="available_balance">Saldo disponível</string>
+    <string name="expiration">Expiration</string>
+    <string name="available_limit">Limite disponível:</string>
+    <string name="total_limit">Limite total:</string>
+</resources>

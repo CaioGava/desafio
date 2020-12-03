@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.desafiomovilepay.presentation.ui.homescreen.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreenFragment_to_cardDetailsFragment"
+            app:destination="@id/cardDetailsFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_statementDetailsFragment"
+            app:destination="@id/statementDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardDetailsFragment"
+        android:name="com.desafiomovilepay.presentation.ui.carddetails.CardDetailsFragment"
+        android:label="card_details_fragment"
+        tools:layout="@layout/card_details_fragment">
+        <argument
+            android:name="cardId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/statementDetailsFragment"
+        android:name="com.desafiomovilepay.presentation.ui.statementdetails.StatementDetailsFragment"
+        android:label="statement_details_fragment"
+        tools:layout="@layout/statement_details_fragment">
+        <argument
+            android:name="accountId"
+            app:argType="string" />
+    </fragment>
+</navigation>
